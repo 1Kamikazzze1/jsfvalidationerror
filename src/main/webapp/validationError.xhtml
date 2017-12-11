@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    xmlns:f="http://xmlns.jcp.org/jsf/core"
+    xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+<f:view encoding="UTF-8" contentType="text/html">
+
+    <h:head>
+
+        <title>Validation error</title>
+
+    </h:head>
+
+    <h:body>
+
+        <h:form id="testForm">
+
+            <h:outputLabel for="notNull1" value="NotNull1"></h:outputLabel>
+            <h:inputText id="notNull1"
+                value="#{requestScopedBean.notNull1}" required="true"></h:inputText>
+            <h:message for="notNull1" />
+
+            <br />
+            <br />
+
+            <h:outputLabel for="notNull2" value="NotNull2"></h:outputLabel>
+            <h:inputText id="notNull2"
+                value="#{requestScopedBean.notNull2}" required="true"></h:inputText>
+            <h:message for="notNull2" />
+
+            <br />
+            <br />
+
+            <h:outputLabel for="notEmpty1" value="notEmpty1"></h:outputLabel>
+            <h:inputText id="notEmpty1"
+                value="#{requestScopedBean.notEmpty1}"></h:inputText>
+            <h:message for="notEmpty1" />
+
+            <br />
+            <br />
+
+            <h:outputLabel for="notEmpty2" value="notEmpty2"></h:outputLabel>
+            <h:inputText id="notEmpty2"
+                value="#{requestScopedBean.notEmpty2}"></h:inputText>
+            <h:message for="notEmpty2" />
+
+            <br />
+            <br />
+
+            <h:outputLabel for="nullable1" value="nullable1"></h:outputLabel>
+            <h:inputText id="nullable1"
+                value="#{requestScopedBean.nullable1}"></h:inputText>
+            <h:message for="nullable1" />
+
+            <br />
+            <br />
+
+            <h:outputLabel for="nullable2" value="nullable2"></h:outputLabel>
+            <h:inputText id="nullable2"
+                value="#{requestScopedBean.nullable2}"></h:inputText>
+            <h:message for="nullable2" />
+
+            <br />
+            <br />
+
+            <h:outputLabel for="notNullLong" value="notNullLong"></h:outputLabel>
+            <h:inputText id="notNullLong"
+                value="#{requestScopedBean.notNullLong}"></h:inputText>
+            <h:message for="notNullLong" />
+
+            <br />
+            <br />
+
+            <h:outputLabel for="nullableLong" value="nullableLong"></h:outputLabel>
+            <h:inputText id="nullableLong"
+                value="#{requestScopedBean.nullableLong}"></h:inputText>
+            <h:message for="nullableLong" />
+
+            <br />
+            <br />
+
+            <h:commandButton value="Save"
+                action="#{requestScopedBean.save()}" update="testForm"></h:commandButton>
+
+
+        </h:form>
+
+    </h:body>
+
+</f:view>
+
+</html>
