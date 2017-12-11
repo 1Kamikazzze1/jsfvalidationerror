@@ -55,6 +55,10 @@
         <jsf.impl.version>2.2.15</jsf.impl.version>
         <hibernate.validation.version>6.0.2.Final</hibernate.validation.version>
 
+        <failOnMissingWebXml>false</failOnMissingWebXml>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        
     </properties>
 
 
